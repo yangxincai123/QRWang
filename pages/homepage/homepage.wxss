@@ -1,0 +1,39 @@
+/* pages/homepage/homepage.wxss */
+
+.view-item {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.view-left {
+  width: 45%;
+  height: 100%;
+}
+
+.view-left image {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+}
+
+.view-right {
+  height: 100%;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.view-right text {
+  width: 100%;
+}
+
+.spaceLeft {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}

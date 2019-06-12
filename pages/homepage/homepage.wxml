@@ -1,0 +1,20 @@
+<!--pages/homepage/homepage.wxml-->
+<wxs src="../../utils/filter.wxs" module="filter" />
+
+<view class='view-root'>
+  <statusLayout id="statusLayout" status='LOADING' bindOnClickListener='reload'>
+    <view wx:for="{{pdt_list}}" wx:key="home_pdt_list">
+      <view class='view-item spaceLeft'>
+        <view class='view-left'>
+          <image src='https://hiyouclub.com/dy_file/chp/sp/pdt_photo/{{item.pdt_photo}}'></image>
+        </view>
+        <view class='view-right spaceLeft'>
+          <text>{{item.name}}</text>
+          <text>￥{{filter.moneyFormat(item.org_price_fee)}}</text>
+          <text>￥{{filter.moneyFormat(item.org_mem_price_fee)}}</text>
+        </view>
+      </view>
+    </view>
+    <load-more id="loadMoreView" bindloadMoreListener='loadMoreListener' bindclickLoadMore='clickLoadMore'></load-more>
+  </statusLayout>
+</view>

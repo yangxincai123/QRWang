@@ -1,0 +1,13 @@
+// filter.wxs
+
+var moneyFormat = function (arg) {
+  var res_num = (parseFloat(arg) / 100.00).toFixed(2);
+  return res_num;
+}
+
+/*
+ * 导出
+ */
+module.exports = {
+  moneyFormat: moneyFormat
+}
